@@ -1,3 +1,5 @@
+import React from 'react';
+import { BrowserRouter as Router } from 'react-router-dom'
 import Home from "./Screens/Home";
 import About from "./Screens/About";
 import Work from "./Screens/Work";
@@ -7,11 +9,13 @@ import Skills from "./Screens/Skills";
 const App = () => {
   return (
     <div className="bg-slate dark:bg-black h-auto w-full scroll-smooth">
-      <Home />
-      <About />
-      <Work />
-      <Skills />
-      <Contact />
+      <Router basename=''>
+        <Home />
+        <About />
+        <Work />
+        <Skills />
+        <Contact />
+      </Router>
     </div>
   );
 }
