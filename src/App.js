@@ -18,10 +18,10 @@ const App = () => {
     <div handleToggle={handleToggle} className={!flag ? "dark bg-slate dark:bg-black h-auto w-full scroll-smooth overflow-x-hidden relative" : "bg-slate dark:bg-black h-auto w-full scroll-smooth overflow-x-hidden relative"} >
       <Router basename=''>
         <Home handleToggle={ handleToggle }/>
-        <About />
+        {/* <About />
         <Work />
         <Skills />
-        <Contact />
+        <Contact /> */}
       </Router>
     </div>
   );
