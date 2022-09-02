@@ -10,10 +10,12 @@ const Skills = () => {
         gsap.to(".skills", {
             scrollTrigger: {
               trigger: ".skills",
+              toggleActions: 'restart pause reverse pause',
               markers: false,
               start: "top top",
               pin: true,
-              pinSpacing: false,
+              pinSpacing: true,
+              scrub: true
             },
             opacity: 1,
           });

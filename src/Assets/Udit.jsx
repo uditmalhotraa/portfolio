@@ -5,7 +5,7 @@ export const Udit = () => {
     <svg
       xmlns="http://www.w3.org/2000/svg"
       width="90%"
-	  className="mb-5 drop-shadow-dark dark:drop-shadow-light animate-bounce"
+	    className="mb-5 animate-bounce"
       x="0"
       y="0"
       version="1.1"

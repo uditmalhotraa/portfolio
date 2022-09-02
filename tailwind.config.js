@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  darkMode: 'media',
+  darkMode: 'class',
   content: [
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
@@ -22,6 +22,14 @@ module.exports = {
       'light': '0px 0px 2px rgba(150, 150, 150, 0.5)',
     },
     extend: {
+      boxShadow: {
+        'boxy': '0px 0px 5px 1px rgba(170, 170, 170, 0.6)',
+        'boxy2': '0px 0px 20px 1px rgba(170, 170, 170, 0.8)',
+      },
+      width: {
+        'double': '200%',
+        'tripple': '300%',
+      },
       animation: {
         'animate-bounce': 'bounce 5s infinite',
       },
