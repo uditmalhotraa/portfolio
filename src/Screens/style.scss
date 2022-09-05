@@ -1,3 +1,15 @@
+*{
+  font-family: 'Fira Sans', sans-serif;
+}
+::-moz-selection {
+  color: #FF3300;
+  background: #00CCFF;
+}
+
+::selection {
+  color: #FF3300;
+  background: #00CCFF;
+}
 .main-title {
   display: flex;
   flex-direction: column;
@@ -47,7 +59,7 @@
     float: left;
     overflow: hidden;
     position: relative;
-    height: 40px;
+    height: 32px;
     top: 24px;
     align-self: center;
   }
@@ -188,16 +200,16 @@
       top: 0px;
     }
     20% {
-      top: -50px;
+      top: -32px;
     }
     40% {
-      top: -95px;
+      top: -62px;
     }
     60% {
-      top: -140px;
+      top: -92px;
     }
     80% {
-      top: -185px;
+      top: -126px;
     }
   }
 
@@ -206,16 +218,16 @@
       top: 0px;
     }
     20% {
-      top: -50px;
+      top: -32px;
     }
     40% {
-      top: -95px;
+      top: -62px;
     }
     60% {
-      top: -140px;
+      top: -92px;
     }
     80% {
-      top: -185px;
+      top: -126px;
     }
   }
   @-moz-keyframes move {
@@ -223,16 +235,16 @@
       top: 0px;
     }
     20% {
-      top: -50px;
+      top: -32px;
     }
     40% {
-      top: -95px;
+      top: -62px;
     }
     60% {
-      top: -140px;
+      top: -92px;
     }
     80% {
-      top: -185px;
+      top: -126px;
     }
   }
   @-o-keyframes move {
@@ -240,16 +252,16 @@
       top: 0px;
     }
     20% {
-      top: -50px;
+      top: -32px;
     }
     40% {
-      top: -95px;
+      top: -62px;
     }
     60% {
-      top: -140px;
+      top: -92px;
     }
     80% {
-      top: -185px;
+      top: -126px;
     }
   }
   @keyframes move {
@@ -257,16 +269,16 @@
       top: 0px;
     }
     20% {
-      top: -50px;
+      top: -32px;
     }
     40% {
-      top: -95px;
+      top: -62px;
     }
     60% {
-      top: -140px;
+      top: -92px;
     }
     80% {
-      top: -185px;
+      top: -126px;
     }
   }
 }

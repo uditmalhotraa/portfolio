@@ -13,9 +13,14 @@ module.exports = {
       'darkgray': '#333333',
       'black': '#000000',
     },
-    fontFamily: {
-      sans: ['Poppins', 'sans-serif'],
-      serif: ['Poppins', 'serif'],
+    fontWeight: {
+      thin: 200,
+      light: 300,
+      normal: 400,
+      medium: 500,
+      semibold: 600,
+      bold: 700,
+      extrabold: 800,
     },
     dropShadow: {
       'dark': '0px 0px 2px rgba(150, 150, 150, 0.5)',
@@ -23,8 +28,8 @@ module.exports = {
     },
     extend: {
       boxShadow: {
-        'boxy': '0px 0px 5px 1px rgba(170, 170, 170, 0.6)',
-        'boxy2': '0px 0px 20px 1px rgba(170, 170, 170, 0.8)',
+        'boxy-light': '0px -4px 6px -1px rgba(0,0,0, 0.1)',     
+        'boxy-dark': '0px -4px 6px -1px rgba(255,255,255, 0.2)',    
       },
       width: {
         'double': '200%',
