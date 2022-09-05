@@ -9,6 +9,7 @@ import AddCircleIcon from '@mui/icons-material/AddCircle';
 import CancelIcon from '@mui/icons-material/Cancel';
 import SchoolIcon from '@mui/icons-material/School';
 import HomeIcon from '@mui/icons-material/Home';
+import KeyboardBackspaceIcon from '@mui/icons-material/KeyboardBackspace';
 import './style.scss';
 import { IconButton, Tooltip } from '@mui/material';
 
@@ -65,7 +66,10 @@ const Home = (props) => {
   const [flag, setFlag] = useState(0);
 
   return (
-    <div className='home relative flex justify-center items-center bg-slate dark:bg-black'>
+    <div className='home relative flex flex-col justify-center items-center bg-slate dark:bg-black'>
+      {skills ?
+        <IconButton className="absolute top-[4rem] md:top-0 left-[0] md:left-[1rem] self-start" onClick={() => { handleSkillsToggle(); }}><Tooltip title="Home" placement='left'><KeyboardBackspaceIcon fontSize='large' className='text-[#666] dark:text-lightgray cursor-pointer' sx={{ fontSize: '3rem' }} /></Tooltip></IconButton>
+        : ''}
       <div className='z-20 header nav-item absolute bg-slate dark:bg-black top-0 w-full h-16 flex flex-row basis-full justify-between items-center px-6 shadow-md shadow-lightgray dark:shadow-darkgray'>
         <div className='flex flex-row justify-between items-center'>
           <a href="https://medium.com/@uditmalhotraa" rel="noreferrer" target="_blank" className=' font-normal tracking-wide nav-item-foot sm:my-0 text-black dark:text-white text-lg transition ease-in-out duration-700 hover:scale-105 select-none '><button className=' border px-3 py-1 font-light hover:text-[#00CCFF]'>Work</button></a>
@@ -84,17 +88,17 @@ const Home = (props) => {
           <p ref={el => { text2 = el }} className='text-black dark:text-white text-2xl tracking-wide font-normal'>Developer</p>
         </div>
         :
-        <div className='skills w-full mt-16 mb-8 bg-slate dark:bg-black h-max min-h-[350px] py-8 flex flex-col lg:flex-row justify-between items-center lg:w-[80%]'>
+        <div className='skills w-full mt-16 mb-8 bg-slate dark:bg-black py-8 h-max min-h-[350px] flex flex-col lg:flex-row justify-between items-center lg:w-[80%]'>
           <div className='languages flex flex-col justify-center m-auto min-w-[300px] lg:w-auto mb-5 lg:mb-auto pl-4 pr-24 sm:px-0'>
             <p className='text-black dark:text-white text-2xl tracking-wide font-medium mb-3 '>Languages</p>
             <p className='text-black dark:text-white text-xl tracking-wide font-light mb-1 border-l-2 pl-2'>React JS, TS, Storybook</p>
             <p className='text-black dark:text-white text-xl tracking-wide font-light mb-1 border-l-2 pl-2'>HTML, CSS, JS, SCSS</p>
             <p className='text-black dark:text-white text-xl tracking-wide font-light mb-1 border-l-2 pl-2'>Bootstrap, MUI, Tailwind, GSAP</p>
-            <p className='text-black dark:text-white text-xl tracking-wide font-light border-l-2 pl-2'>C, C++, Java, Python</p>
+            <p className='text-black dark:text-white text-xl tracking-wide font-light border-l-2 pl-2'>C, C++, Java, Python, SQL</p>
           </div>
           <div className='tools flex flex-col justify-center m-auto min-w-[300px] lg:w-auto mb-5 lg:mb-auto pl-4 pr-24 sm:px-0'>
             <p className='text-black dark:text-white text-2xl tracking-wide font-medium mb-3 '>Tools</p>
-            <p className='text-black dark:text-white text-xl tracking-wide font-light mb-1 border-l-2 pl-2'>Sketch, Adobe XD</p>
+            <p className='text-black dark:text-white text-xl tracking-wide font-light mb-1 border-l-2 pl-2'>Sketch, XD, Miro, Jira, Azure</p>
             <p className='text-black dark:text-white text-xl tracking-wide font-light mb-1 border-l-2 pl-2'>Adobe Photoshop, Illustrator</p>
             <p className='text-black dark:text-white text-xl tracking-wide font-light mb-1 border-l-2 pl-2'>Excel, Word, Powerpoint</p>
             <p className='text-black dark:text-white text-xl tracking-wide font-light border-l-2 pl-2'>Mac OS, Windows OS</p>
@@ -115,9 +119,9 @@ const Home = (props) => {
       {show ?
         <div className='z-20 nav-item absolute right-[0.5rem] bottom-[2.5rem] flex flex-col justify-center items-center mr-1'>
           {!skills ?
-            <IconButton onClick={handleSkillsToggle}><Tooltip title="Skills" placement='left'><SchoolIcon fontSize='large' className='text-[#666] dark:text-lightgray cursor-pointer' sx={{ fontSize: '3rem' }} /></Tooltip></IconButton>
+            <IconButton onClick={() => { handleSkillsToggle(); handleTogglee() }}><Tooltip title="Skills" placement='left'><SchoolIcon fontSize='large' className='text-[#666] dark:text-lightgray cursor-pointer' sx={{ fontSize: '3rem' }} /></Tooltip></IconButton>
             :
-            <IconButton onClick={handleSkillsToggle}><Tooltip title="Home" placement='left'><HomeIcon fontSize='large' className='text-[#666] dark:text-lightgray cursor-pointer' sx={{ fontSize: '3rem' }} /></Tooltip></IconButton>
+            <IconButton onClick={() => { handleSkillsToggle(); handleTogglee() }}><Tooltip title="Home" placement='left'><HomeIcon fontSize='large' className='text-[#666] dark:text-lightgray cursor-pointer' sx={{ fontSize: '3rem' }} /></Tooltip></IconButton>
           }
           <IconButton href="https://linkedin.com/in/uditmalhotraa" target="_blank" rel="noopener noreferrer"><Tooltip title="Linkedin" placement='left'><LinkedInIcon fontSize='large' className='text-[#666] dark:text-lightgray cursor-pointer' sx={{ fontSize: '3rem' }} /></Tooltip></IconButton>
           <IconButton href="https://instagram.com/uditmalhotraa" target="_blank" rel="noopener noreferrer"><Tooltip title="Instagram" placement='left'><InstagramIcon fontSize='large' className='text-[#666] dark:text-lightgray cursor-pointer' sx={{ fontSize: '3rem' }} /></Tooltip></IconButton>
