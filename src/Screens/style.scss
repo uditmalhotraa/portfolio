@@ -1,5 +1,24 @@
 *{
   font-family: 'Fira Sans', sans-serif;
+  box-sizing: border-box;
+}
+html{
+  height: 100%;
+}
+body{
+  min-height: 100%;
+  height: inherit !important;
+}
+body #root{
+  height: 100% !important;
+}
+.cont{
+  min-height: 100%;
+  height: inherit !important;
+}
+.home{
+  height: 100% !important;
+  margin: auto;
 }
 ::-moz-selection {
   color: #FF3300;

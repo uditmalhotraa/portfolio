@@ -65,7 +65,7 @@ const Home = (props) => {
   const [flag, setFlag] = useState(0);
 
   return (
-    <div className='home h-full min-h-screen relative flex justify-center items-center bg-slate dark:bg-black'>
+    <div className='home relative flex justify-center items-center bg-slate dark:bg-black'>
       <div className='z-20 header nav-item absolute bg-slate dark:bg-black top-0 w-full h-16 flex flex-row basis-full justify-between items-center px-6 shadow-md shadow-lightgray dark:shadow-darkgray'>
         <div className='flex flex-row justify-between items-center'>
           <a href="https://medium.com/@uditmalhotraa" rel="noreferrer" target="_blank" className=' font-normal tracking-wide nav-item-foot sm:my-0 text-black dark:text-white text-lg transition ease-in-out duration-700 hover:scale-105 select-none '><button className=' border px-3 py-1 font-light hover:text-[#00CCFF]'>Work</button></a>

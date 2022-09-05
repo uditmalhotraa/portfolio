@@ -1,5 +1,4 @@
 import { React, useState } from 'react';
-import { BrowserRouter as Router } from 'react-router-dom'
 import Home from "./Screens/Home";
 
 const App = () => {
@@ -11,10 +10,8 @@ const App = () => {
   };
 
   return (
-    <div handleToggle={handleToggle} className={!flag ? "dark bg-slate dark:bg-black h-auto w-full scroll-smooth overflow-x-hidden relative" : "bg-slate dark:bg-black h-auto w-full scroll-smooth overflow-x-hidden relative"} >
-      <Router basename=''>
+    <div handleToggle={handleToggle} className={!flag ? "cont dark bg-slate dark:bg-black w-full scroll-smooth overflow-x-hidden relative" : "cont bg-slate dark:bg-black w-full scroll-smooth overflow-x-hidden relative"} >
         <Home handleToggle={ handleToggle }/>
-      </Router>
     </div>
   );
 }
