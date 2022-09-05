@@ -72,8 +72,8 @@ const Home = (props) => {
         : ''}
       <div className='z-20 header nav-item absolute bg-slate dark:bg-black top-0 w-full h-16 flex flex-row basis-full justify-between items-center px-6 shadow-md shadow-lightgray dark:shadow-darkgray'>
         <div className='flex flex-row justify-between items-center'>
-          <a href="https://medium.com/@uditmalhotraa" rel="noreferrer" target="_blank" className=' font-normal tracking-wide nav-item-foot sm:my-0 text-black dark:text-white text-lg transition ease-in-out duration-700 hover:scale-105 select-none '><button className=' border px-3 py-1 font-light hover:text-[#00CCFF]'>Work</button></a>
-          <a href="https://drive.google.com/file/d/1vZLC6Jq4nVV-YMVfvSOY7jkug3w315A6/view?usp=sharing" rel="noreferrer" target="_blank" className=' font-normal tracking-wide nav-item-foot mx-5 my-2 sm:my-0 text-black dark:text-white text-lg transition ease-in-out duration-700 hover:scale-105 select-none '><button className=' border px-3 py-1 font-light hover:text-[#FF3300]'>Resume</button></a>
+          <a href="https://medium.com/@uditmalhotraa" rel="noreferrer" target="_self" className=' font-normal tracking-wide nav-item-foot sm:my-0 text-black dark:text-white text-lg transition ease-in-out duration-700 hover:scale-105 select-none '><button className=' border px-3 py-1 font-light hover:text-[#00CCFF]'>Work</button></a>
+          <a href="https://drive.google.com/file/d/1vZLC6Jq4nVV-YMVfvSOY7jkug3w315A6/view?usp=sharing" rel="noreferrer" target="_self" className=' font-normal tracking-wide nav-item-foot mx-5 my-2 sm:my-0 text-black dark:text-white text-lg transition ease-in-out duration-700 hover:scale-105 select-none '><button className=' border px-3 py-1 font-light hover:text-[#FF3300]'>Resume</button></a>
         </div>
         <div className='flex flex-col border-2 border-black dark:border-white h-8 w-14 bg-transparent rounded-full relative justify-center cursor-pointer' onClick={() => { props.handleToggle(); setFlag(!flag) }}>
           <div className={flag ? "flex flex-col bg-white h-5 w-5 rounded-full absolute right-0 mx-1" : "flex flex-col bg-black h-5 w-5 rounded-full absolute left-0 mx-1"}></div>
@@ -123,9 +123,9 @@ const Home = (props) => {
             :
             <IconButton onClick={() => { handleSkillsToggle(); handleTogglee() }}><Tooltip title="Home" placement='left'><HomeIcon fontSize='large' className='text-[#666] dark:text-lightgray cursor-pointer' sx={{ fontSize: '3rem' }} /></Tooltip></IconButton>
           }
-          <IconButton href="https://linkedin.com/in/uditmalhotraa" target="_blank" rel="noopener noreferrer"><Tooltip title="Linkedin" placement='left'><LinkedInIcon fontSize='large' className='text-[#666] dark:text-lightgray cursor-pointer' sx={{ fontSize: '3rem' }} /></Tooltip></IconButton>
-          <IconButton href="https://instagram.com/uditmalhotraa" target="_blank" rel="noopener noreferrer"><Tooltip title="Instagram" placement='left'><InstagramIcon fontSize='large' className='text-[#666] dark:text-lightgray cursor-pointer' sx={{ fontSize: '3rem' }} /></Tooltip></IconButton>
-          <IconButton href="https://open.spotify.com/user/8m59lr39cu8zunxmrd9c2uavb?si=64c34848a0954120" target="_blank" rel="noopener noreferrer"><Tooltip title="Spotify" placement='left'><PlayCircleIcon fontSize='large' className='text-[#666] dark:text-lightgray cursor-pointer' sx={{ fontSize: '3rem' }} /></Tooltip></IconButton>
+          <IconButton href="https://linkedin.com/in/uditmalhotraa" target="_self" rel="noopener noreferrer"><Tooltip title="Linkedin" placement='left'><LinkedInIcon fontSize='large' className='text-[#666] dark:text-lightgray cursor-pointer' sx={{ fontSize: '3rem' }} /></Tooltip></IconButton>
+          <IconButton href="https://instagram.com/uditmalhotraa" target="_self" rel="noopener noreferrer"><Tooltip title="Instagram" placement='left'><InstagramIcon fontSize='large' className='text-[#666] dark:text-lightgray cursor-pointer' sx={{ fontSize: '3rem' }} /></Tooltip></IconButton>
+          <IconButton href="https://open.spotify.com/user/8m59lr39cu8zunxmrd9c2uavb?si=64c34848a0954120" target="_self" rel="noopener noreferrer"><Tooltip title="Spotify" placement='left'><PlayCircleIcon fontSize='large' className='text-[#666] dark:text-lightgray cursor-pointer' sx={{ fontSize: '3rem' }} /></Tooltip></IconButton>
           <IconButton onClick={handleTogglee} ><CancelIcon fontSize='large' className='cursor-pointer' sx={{ color: '#DA5636', fontSize: '4rem', textShadow: "0px 0px 4px #666" }} /></IconButton>
         </div>
         :
