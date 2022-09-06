@@ -73,7 +73,7 @@ const Home = (props) => {
         <IconButton className="absolute top-[4rem] md:top-0 left-[0] md:left-[1rem] self-start" onClick={() => { handleSkillsToggle(); }}><Tooltip title="Home" placement='left'><KeyboardBackspaceIcon fontSize='large' className='text-[#666] dark:text-lightgray cursor-pointer' sx={{ fontSize: '3rem' }} /></Tooltip></IconButton>
         : ''}
       <div className='z-20 header nav-item absolute bg-slate dark:bg-black top-0 w-full h-16 flex flex-row basis-full justify-between items-center px-6'>
-        <Tooltip title="Refesh" placement='bottom'><a href="/" className='text-black dark:text-white text-2xl tracking-wide font-normal'>Udit</a></Tooltip>
+        <Tooltip title="Refesh" placement='bottom'><a href="/" className='text-black dark:text-white text-2xl tracking-wide font-normal'>Udit Malhotra</a></Tooltip>
         <div className='flex flex-col border-2 border-black dark:border-white h-8 w-14 bg-transparent rounded-full relative justify-center cursor-pointer' onClick={() => { props.handleToggle(); setFlag(!flag) }}>
           {/* <div className={flag ? "flex flex-col bg-white h-5 w-5 rounded-full absolute right-0 mx-1" : "flex flex-col bg-black h-5 w-5 rounded-full absolute left-0 mx-1"}></div> */}
           {!flag ? <LightModeIcon className='absolute left-0 mx-1'/> : <DarkModeIcon className=' text-white absolute right-0 mx-1' />}
@@ -129,7 +129,7 @@ const Home = (props) => {
         </div>
         :
         <div className='z-20 circle absolute right-[0.5rem] bottom-[2.5rem] flex flex-col justify-center items-center gap-y-2 mr-1'>
-          <IconButton onClick={handleTogglee} className=" animate-bounce" ><AddCircleIcon fontSize="large" className='cursor-pointer' sx={{ color: '#36BADA', fontSize: '4rem' }} /></IconButton>
+          <IconButton onClick={handleTogglee} className=" animate-bounce" ><AddCircleIcon fontSize="large" className='cursor-pointer bg-slate dark:bg-black rounded-full shadow-boxy-light dark:shadow-boxy-dark' sx={{ color: '#36BADA', fontSize: '4rem' }} /></IconButton>
         </div>
       }
     </div>

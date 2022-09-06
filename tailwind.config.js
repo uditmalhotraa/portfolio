@@ -28,8 +28,8 @@ module.exports = {
     },
     extend: {
       boxShadow: {
-        'boxy-light': '0px -4px 6px -1px rgba(0,0,0, 0.1)',     
-        'boxy-dark': '0px -4px 6px -1px rgba(255,255,255, 0.2)',    
+        'boxy-light': '0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1)',     
+        'boxy-dark': '0 5px 15px -1px rgb(155 155 155 / 0.5), 0 2px 6px -1px rgb(155 155 155 / 0.5)',    
       },
       width: {
         'double': '200%',
