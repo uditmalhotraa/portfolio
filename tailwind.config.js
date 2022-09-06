@@ -29,7 +29,7 @@ module.exports = {
     extend: {
       boxShadow: {
         'boxy-light': '0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1)',     
-        'boxy-dark': '0 5px 15px -1px rgb(155 155 155 / 0.5), 0 2px 6px -1px rgb(155 155 155 / 0.5)',    
+        'boxy-dark': '0 10px 15px -3px rgb(155 155 155 / 0.5), 0 4px 6px -4px rgb(155 155 155 / 0.5)',    
       },
       width: {
         'double': '200%',
