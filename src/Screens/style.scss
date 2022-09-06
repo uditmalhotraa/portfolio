@@ -21,13 +21,13 @@ body #root{
   margin: auto;
 }
 ::-moz-selection {
-  color: #FF3300;
-  background: #00CCFF;
+  color: black;
+  background: white;
 }
 
 ::selection {
-  color: #FF3300;
-  background: #00CCFF;
+  color: black;
+  background: white;
 }
 .main-title {
   display: flex;
