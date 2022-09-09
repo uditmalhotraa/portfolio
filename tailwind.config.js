@@ -9,9 +9,11 @@ module.exports = {
       transparent: 'transparent',
       'white': '#ffffff',
       'slate': '#F5F5F7',
-      'lightgray': '#D6D6D6',
-      'darkgray': '#333333',
+      'lightgray': '#999',
+      'darkgray': '#666',
       'black': '#000000',
+      'accent-dark': '#672AE9',
+      'accent-light': '#A000FE',
     },
     fontWeight: {
       thin: 200,

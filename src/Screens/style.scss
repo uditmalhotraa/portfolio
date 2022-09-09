@@ -1,5 +1,5 @@
 *{
-  font-family: 'Fira Sans', sans-serif;
+  font-family: 'Roboto Mono', monospace;
   box-sizing: border-box;
 }
 html{
@@ -20,14 +20,17 @@ body #root{
   min-height: 100% !important;
   margin: auto;
 }
+.height-code{
+  line-height: 3rem !important;
+}
 ::-moz-selection {
-  color: black;
-  background: white;
+  color: #fff;
+  background: #672AE9;
 }
 
 ::selection {
-  color: black;
-  background: white;
+  color: #fff;
+  background: #672AE9;
 }
 .main-title {
   display: flex;
@@ -300,27 +303,4 @@ body #root{
       top: -126px;
     }
   }
-}
-
-.work-position-light {
-  //background: -webkit-linear-gradient(135deg, hsl(195, 100%, 78%), hsl(20, 100%, 70%));
-  //background: -webkit-linear-gradient(135deg, #36BADA, #DA5636);
-  background: -webkit-linear-gradient(135deg, #00CCFF, #FF3300);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.work-position-hover:hover {
-  //background: -webkit-linear-gradient(135deg, hsl(195, 100%, 78%), hsl(20, 100%, 70%));
-  //background: -webkit-linear-gradient(135deg, #36BADA, #DA5636);
-  background: -webkit-linear-gradient(135deg, #00CCFF, #FF3300);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.back {
-  //background: -webkit-linear-gradient(135deg, hsl(195, 100%, 78%), hsl(20, 100%, 70%));
-  //background: -webkit-linear-gradient(135deg, #36BADA, #DA5636);
-  background: -webkit-linear-gradient(135deg, rgba(0, 204, 255, 0.5), rgba(255, 51, 0, 0.5));
-  background-blend-mode:multiply;
 }

@@ -10,7 +10,7 @@ const App = () => {
   };
 
   return (
-    <div handleToggle={handleToggle} className={!flag ? "cont dark bg-slate dark:bg-black w-full scroll-smooth overflow-x-hidden relative" : "cont bg-slate dark:bg-black w-full scroll-smooth overflow-x-hidden relative"} >
+    <div handleToggle={handleToggle} className={flag ? "cont dark bg-slate dark:bg-black w-full scroll-smooth overflow-x-hidden relative" : "cont bg-slate dark:bg-black w-full scroll-smooth overflow-x-hidden relative"} >
         <Home handleToggle={ handleToggle }/>
     </div>
   );
