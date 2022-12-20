@@ -1,36 +1,39 @@
-*{
-  font-family: 'Roboto Mono', monospace;
+
+* {
+  //font-family: 'Roboto Mono', sans-serif;
+  font-family: "Poppins", sans-serif;
   box-sizing: border-box;
 }
-html{
+html {
   //height: 100%;
 }
-body{
+
+body {
   min-height: 100%;
   height: inherit !important;
 }
-body #root{
+body #root {
   height: 100% !important;
 }
-.cont{
+.cont {
   min-height: 100%;
   height: inherit !important;
 }
-.home{
+.home {
   min-height: 100% !important;
   margin: auto;
 }
-.height-code{
+.height-code {
   line-height: 3rem !important;
 }
 ::-moz-selection {
   color: #fff;
-  background: #672AE9;
+  background: #672ae9;
 }
 
 ::selection {
   color: #fff;
-  background: #672AE9;
+  background: #672ae9;
 }
 .main-title {
   display: flex;

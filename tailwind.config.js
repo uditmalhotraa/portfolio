@@ -30,8 +30,11 @@ module.exports = {
     },
     extend: {
       boxShadow: {
-        'boxy-light': '0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1)',     
-        'boxy-dark': '0 10px 15px -3px rgb(155 155 155 / 0.5), 0 4px 6px -4px rgb(155 155 155 / 0.5)',    
+        'boxy-light': 'rgba(0, 0, 0, 0.1) 0px 3px 10px;',     
+        'boxy-dark': 'rgba(255, 255, 255, 0.2) 0px 3px 10px;',    
+        'mob': '0 -3px 6px -1px rgb(0 0 0 / 0.1), 0 -1px 4px -2px rgb(0 0 0 / 0.1);',
+        'mob-dark': '0 -3px 6px -1px rgb(255 255 255 / 0.2), 0 -1px 4px -2px rgb(255 255 255 / 0.2);',
+        'web-dark': '0 4px 6px -1px rgb(255 255 255 / 0.2), 0 2px 4px -2px rgb(255 255 255 / 0.2);',
       },
       width: {
         'double': '200%',
