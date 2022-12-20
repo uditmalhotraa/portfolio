@@ -2,7 +2,6 @@
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://uditmalhotra.com",
   "dependencies": {
     "@emotion/react": "^11.10.4",
     "@emotion/styled": "^11.10.4",
@@ -11,7 +10,6 @@
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.3.0",
     "@testing-library/user-event": "^13.5.0",
-    "gh-pages": "^4.0.0",
     "gsap": "^3.10.4",
     "react": "^18.2.0",
     "react-copy-to-clipboard": "^5.1.0",
@@ -24,8 +22,7 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "deploy": "gh-pages -b master -d build",
-    "predeploy": "npm run build",
+    "deploy": "npm run build && gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -51,6 +48,7 @@
   },
   "devDependencies": {
     "autoprefixer": "^10.4.8",
+    "gh-pages": "^4.0.0",
     "postcss": "^8.4.14",
     "tailwindcss": "^3.1.7"
   }
